@@ -1,23 +1,24 @@
 import React from 'react';
 import Head from 'next/head';
-import NavBar from './NavBar';
+
+import Navbar from './Navbar';
 import Footer from './Footer';
 
 const Layout = ({ children }) => {
   return (
     <div className="layout">
-    <Head>
-      <title>Guildford Guitar Lessons Store</title>
-    </Head>
-    <header>
-      <NavBar />
-    </header>
-<main className="main-container">
-  {children}
-</main>
-<footer>
-  <Footer />
-</footer>
+      <Head>
+        <title>Guildford Guitar Lessons</title>
+      </Head>
+      <header>
+        <Navbar />
+      </header>
+      <main className="main-container">
+        {children}
+      </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   )
 }
